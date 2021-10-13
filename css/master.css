@@ -1,3 +1,19 @@
 #skyrim_logo {
   width:45%;
 }
+.caption {
+  color:grey;
+}
+
+.one_third {
+  display: inline-block;
+  width:30%;
+}
+.div_img {
+  height:300px;
+  max-width:300px;
+}
+
+.full_width {
+  width:30%;
+}
