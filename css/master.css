@@ -6,14 +6,34 @@
 }
 
 .one_third {
-  display: inline-block;
+  display:inline;
   width:30%;
+  text-align:center;
 }
 .div_img {
-  height:300px;
-  max-width:300px;
+  height:70%;
 }
 
 .full_width {
-  width:300px;
+  width:65%;
+}
+
+.flex_row {
+  display:flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.flex_row_bottom {
+  display:flex;
+  justify-content: flex-start;
+  padding-left: 15px;
+}
+
+.bottom_row {
+  text-align:center
+}
+
+.gallery_area {
+  margin:20px;
 }
