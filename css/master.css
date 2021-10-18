@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
 #skyrim_logo {
   width:45%;
   padding-left: 20px;
 }
 
-.legend_dragonborn {
+#legend_dragonborn {
   padding-left: 20px;
   margin:auto;
+  font-family:"IM Fell English SC",sans-serif;
+}
+
+body {
+  background-color: rgb(235, 213, 179);
 }
 
 .full {
