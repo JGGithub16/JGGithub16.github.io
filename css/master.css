@@ -31,7 +31,7 @@ main {
 }
 
 .cell {
-  height:200px;
+  height:400px;
   width:50%;
   border: 5px solid white;
   display:inline-block;
@@ -73,12 +73,12 @@ main {
   border-radius:50%;
   display:inline-block;
   position:absolute;
-  top:245px;
-  left:41.7%;
+  left:50%;
   height:100px;
-  weight:100px;
+  width:100px;
   display: flex;
   align-items: center;
+  transform:translate(-50%,350%);
 }
 
 .circle:hover {
