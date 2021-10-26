@@ -1,61 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
-
-#skyrim_logo {
-  width:45%;
-  padding-left: 20px;
-}
-
-#legend_dragonborn {
-  padding-left: 20px;
-  margin:auto;
-  font-family:"IM Fell English SC",sans-serif;
+* {
+  margin:0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(235, 213, 179);
+
 }
 
-.full {
-  margin:auto;
+header {
+  background-color: rgb(121, 13, 13);
+  overflow: auto;
+  padding: 20px;
 }
 
-.caption {
-  color:grey;
+.header_left {
+  float:left;
+  text-align: left;
+  text-decoration: underline;
 }
 
-.body_text {
-  padding-left:20px ;
+.header_right {
+  float:right;
+  text-align: right;
 }
 
-.one_third {
-  display:inline;
-  width:30%;
-  text-align:center;
-}
-.div_img {
-  height:70%;
+main {
+  clear:both;
+  background-color: black;
+  overflow: auto;
 }
 
-.full_width {
-  width:65%;
+.cell {
+  height:200px;
+  width:50%;
+  border: 5px solid white;
+  display:inline-block;
 }
 
-.flex_row {
+.cell:hover {
+  border-color:red;
+}
+
+.topleft {
+  border-top:none;
+  border-left:none;
+  float:left;
+}
+
+.topright {
+  border-top:none;
+  border-right:none;
+  float:right;
+}
+
+.bottomleft {
+  border-bottom:none;
+  border-left:none;
+  float:left;
+
+}
+
+.bottomright {
+  border-bottom:none;
+  border-right:none;
+  float:right;
+
+}
+
+.circle {
+  border: 10px solid white;
+  background-color: black;
+  border-radius:50%;
+  display:inline-block;
+  position:absolute;
+  top:245px;
+  left:41.7%;
+  height:100px;
+  weight:100px;
+  display: flex;
+  align-items: center;
+}
+
+.circle:hover {
+  border-color:red;
+}
+
+nav {
+  overflow:auto;
   display:flex;
-  align-items: baseline;
   justify-content: space-between;
 }
 
-.flex_row_bottom {
-  display:flex;
-  justify-content: flex-start;
-  padding-left: 15px;
+.navbar {
+  list-style-type: none;
+  padding-left:0px;
 }
 
-.bottom_row {
-  text-align:center
+.navbar li {
+  display: inline-block;
+  padding: 10px;
+  padding-right: 0px;
 }
 
-.gallery_area {
-  margin:20px;
+.navbar li a {
+  color:white;
+  text-decoration: none;
+}
+
+hr {
+  text-decoration: none;
+}
+
+footer {
+  background-color: rgb(121, 13, 13);
+  overflow: auto;
+  padding:20px;
+}
+
+.footer_left {
+  width:30%;
+  float:left;
+  text-align:left;
+}
+
+.footer_right {
+  width:60%;
+  float:right;
+  text-align: right;
+}
+
+/* Typography */
+
+.footer_left {
+  font-family: "Arial", "Helvetica",sans-serif;
 }
