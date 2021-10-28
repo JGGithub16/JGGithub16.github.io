@@ -47,6 +47,10 @@ main {
   float:left;
 }
 
+h2 {
+  display: block;
+}
+
 .topright {
   border-top:none;
   border-right:none;
@@ -133,4 +137,11 @@ footer {
 
 .footer_left {
   font-family: "Arial", "Helvetica",sans-serif;
+}
+
+.topleft {
+  color:white;
+  text-align: center;
+  display: block;
+
 }
