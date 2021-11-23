@@ -11,17 +11,24 @@ header {
   background-color: rgb(121, 13, 13);
   overflow: auto;
   padding: 20px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header_left {
-  float:left;
   text-align: left;
   text-decoration: underline;
+  color:black;
 }
 
 .header_right {
-  float:right;
+  display:flex;
+  flex-direction: column;
   text-align: right;
+  line-height: 1em;
+  font-size: 1rem;
+  color:black;
 }
 
 main {
@@ -87,6 +94,12 @@ h2 {
   vertical-align: middle;
 }
 
+.circle img {
+  width:50%;
+  display:block;
+  margin:auto;
+}
+
 .circle:hover {
   border-color:red;
 }
@@ -121,6 +134,7 @@ footer {
   background-color: rgb(121, 13, 13);
   overflow: auto;
   padding:20px;
+  color:black;
 }
 
 .footer_left {
@@ -138,7 +152,7 @@ footer {
 /* Typography */
 
 .footer_left {
-  font-family: "Arial", "Helvetica",sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
 }
 
 .cell {
@@ -148,4 +162,31 @@ footer {
   justify-content: center;
   font-size:2em;
 
+}
+
+.intro-section {
+  color: white;
+  width:90%;
+  margin:30px auto;
+  text-align:center;
+  padding:20px;
+  border:2px solid white;
+}
+
+.services_section h3 {
+  text-align: center;
+
+}
+
+.gallery_section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width:90%;
+  margin:30px auto;
+  padding:20px;
+  border:2px solid white;
+}
+
+.gallery_img_wrapper img {
+  width:100%;
 }
