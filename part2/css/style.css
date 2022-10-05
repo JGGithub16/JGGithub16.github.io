@@ -94,10 +94,6 @@ footer {
   grid-area: footerArea;
 }
 
-section {
-  border: 4px solid indigo;
-}
-
 /****************************************************************************
   Nav/Footer styles
 ****************************************************************************/
@@ -172,7 +168,8 @@ nav h2 {
       color:white;
     }
 
-    #hero a {
+    #hero a,
+    .card a {
       background-color: white;
       color:indigo;
       border: solid 2px indigo;
@@ -184,13 +181,33 @@ nav h2 {
       transition: transform 0.5s;
     }
 
-    #hero a:hover {
+    #hero a:hover,
+    .card a:hover {
       transform:scale(1.1);
     }
 
 /****************************************************************************
   Card styles
 ****************************************************************************/
+
+.card {
+  border: 2px solid indigo;
+  color: indigo;
+  margin: 48px 24px 24px;
+  padding: 12px 12px 24px;
+  text-align: center;
+  box-shadow: 4px 4px 8px 0px grey;
+  flex: 1;
+}
+
+.card p {
+  font-size: 18px;
+  min-height: 100px;
+}
+
+#threeCards,#twoCards {
+  display:flex;
+}
 
 /****************************************************************************
   Gallery styles
@@ -210,6 +227,14 @@ nav h2 {
     "gallery1Area"
     "twoCardsArea"
     "footerArea";
-    flex-direction:column;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  #threeCards,
+  #twoCards {
+    flex-direction: column;
   }
 }
