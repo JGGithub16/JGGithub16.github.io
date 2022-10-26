@@ -44,14 +44,14 @@ function getResultText(computerPick, playerPick) {
 function playGame(yourPick) {
   let myPick = getRandomPick();
 
-  let rockLeft = document.getElementByID("rockLeft");
-  let paperLeft = document.getElementByID("paperLeft");
-  let scissorsLeft = document.getElementByID("scissorsLeft");
-  let rockRight = document.getElementByID("rockRight");
-  let paperRight = document.getElementByID("paperRight");
-  let scissorsRight = document.getElementByID("scissorsRight");
-  let yourPickText = document.getElementByID("yourPickText");
-  let myPickText = document.getElementByID("myPickText");
+  let rockLeft = document.getElementById("rockLeft");
+  let paperLeft = document.getElementById("paperLeft");
+  let scissorsLeft = document.getElementById("scissorsLeft");
+  let rockRight = document.getElementById("rockRight");
+  let paperRight = document.getElementById("paperRight");
+  let scissorsRight = document.getElementById("scissorsRight");
+  let yourPickText = document.getElementById("yourPickText");
+  let myPickText = document.getElementById("myPickText");
 
   yourPickText.innerHTML = yourPick;
   switch(yourPick) {
@@ -79,6 +79,6 @@ function playGame(yourPick) {
     break;
   }
 
-  let result = document.getElementByID("result");
+  let result = document.getElementById("result");
   result.innerHTML = getResultText(myPick, yourPick);
 }
