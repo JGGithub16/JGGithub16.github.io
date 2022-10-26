@@ -40,3 +40,45 @@ function getResultText(computerPick, playerPick) {
     return WIN;
   }
 }
+
+function playGame(yourPick) {
+  let myPick = getRandomPick();
+
+  let rockLeft = document.getElementByID("rockLeft");
+  let paperLeft = document.getElementByID("paperLeft");
+  let scissorsLeft = document.getElementByID("scissorsLeft");
+  let rockRight = document.getElementByID("rockRight");
+  let paperRight = document.getElementByID("paperRight");
+  let scissorsRight = document.getElementByID("scissorsRight");
+  let yourPickText = document.getElementByID("yourPickText");
+  let myPickText = document.getElementByID("myPickText");
+
+  yourPickText.innerHTML = yourPick;
+  switch(yourPick) {
+    case ROCK:
+    rockLeft.classList.add("selected");
+    break;
+    case PAPER:
+    paperLeft.classList.add("selected");
+    break;
+    case SCISSORS:
+    scissorsLeft.classList.add("selected");
+    break;
+  }
+
+  myPickText.innerHTML = myPick;
+  switch(myPick) {
+    case ROCK:
+    rockRight.classList.add("selected");
+    break;
+    case PAPER:
+    paperRight.classList.add("selected");
+    break;
+    case SCISSORS:
+    scissorsRight.classList.add("selected");
+    break;
+  }
+
+  let result = document.getElementByID("result");
+  result.innerHTML = getResultText(myPick, yourPick);
+}
